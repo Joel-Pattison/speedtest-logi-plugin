@@ -32,6 +32,12 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="External\api.exe" />
+    <EmbeddedResource Include="External\api" />
+  </ItemGroup>
+
+
   <Target Name="CopyPackage" AfterTargets="PostBuildEvent">
     <Message Text="📦 Copying package files..." Importance="High" />
     <ItemGroup>
