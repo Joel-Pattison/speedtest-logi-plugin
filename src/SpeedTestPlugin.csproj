@@ -35,6 +35,8 @@
   <ItemGroup>
     <EmbeddedResource Include="External\api.exe" />
     <EmbeddedResource Include="External\api" />
+    <EmbeddedResource Include="Fonts\Inter_18pt-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Inter-LICENSE.txt" />
   </ItemGroup>
 
 
