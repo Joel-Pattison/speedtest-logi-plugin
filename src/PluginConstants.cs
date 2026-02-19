@@ -5,6 +5,9 @@ namespace Loupedeck.SpeedTestPlugin
     /// <summary>Centralised string constants used across the plugin.</summary>
     public static class PluginConstants
     {
+        // Font
+        public const String FontFileName = "Inter_18pt-Medium.ttf";
+
         // Executable
         public static readonly String ExeName = Loupedeck.Helpers.IsWindows() ? "api.exe" : "api";
 
