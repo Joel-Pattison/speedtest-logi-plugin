@@ -14,5 +14,7 @@ namespace Loupedeck.SpeedTestPlugin
         public static readonly String ExeResourceName = Loupedeck.Helpers.IsWindows()
             ? "Loupedeck.SpeedTestPlugin.External.api.exe"
             : "Loupedeck.SpeedTestPlugin.External.api";
+
+        public const String ExeArguments = "--accept-license --accept-gdpr --progress=yes -f jsonl";
     }
 }
