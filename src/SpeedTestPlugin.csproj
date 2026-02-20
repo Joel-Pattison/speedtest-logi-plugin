@@ -39,6 +39,7 @@
   <ItemGroup>
     <EmbeddedResource Include="External\api.exe" />
     <EmbeddedResource Include="External\api" />
+    <EmbeddedResource Include="package\metadata\Icon256x256.png" />
     <EmbeddedResource Include="Fonts\Inter_18pt-Medium.ttf" />
     <EmbeddedResource Include="Fonts\Inter-LICENSE.txt" />
   </ItemGroup>

@@ -15,6 +15,8 @@ namespace Loupedeck.SpeedTestPlugin.Constants
             ? "Loupedeck.SpeedTestPlugin.External.api.exe"
             : "Loupedeck.SpeedTestPlugin.External.api";
 
+        public const String ImageResourceName = "Loupedeck.SpeedTestPlugin.package.metadata.Icon256x256.png";
+
         public const String ExeArguments = "--accept-license --accept-gdpr --progress=yes -f jsonl";
     }
 }
