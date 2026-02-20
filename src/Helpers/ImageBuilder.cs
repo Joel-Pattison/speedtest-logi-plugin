@@ -3,6 +3,8 @@ namespace Loupedeck.SpeedTestPlugin.Helpers
     using System;
     using System.IO;
 
+    using Loupedeck.SpeedTestPlugin.Constants;
+
     using SkiaSharp;
 
     /// <summary>SkiaSharp-based image builder with text measurement and rendering.</summary>

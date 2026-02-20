@@ -8,6 +8,7 @@ namespace Loupedeck.SpeedTestPlugin.Services
     using System.Threading;
     using System.Threading.Tasks;
 
+    using Loupedeck.SpeedTestPlugin.Constants;
     using Loupedeck.SpeedTestPlugin.Helpers;
     using Loupedeck.SpeedTestPlugin.Models;
 

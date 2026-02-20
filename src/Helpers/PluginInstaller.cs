@@ -5,6 +5,8 @@ namespace Loupedeck.SpeedTestPlugin.Helpers
     using System.IO;
     using System.Reflection;
 
+    using Loupedeck.SpeedTestPlugin.Constants;
+
     /// <summary>
     /// Manages extraction and cleanup of embedded plugin resources.
     /// </summary>
