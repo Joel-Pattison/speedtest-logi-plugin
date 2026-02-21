@@ -5,6 +5,10 @@ namespace Loupedeck.SpeedTestPlugin.Constants
     /// <summary>Centralised string constants used across the plugin.</summary>
     public static class PluginConstants
     {
+        // Command metadata
+        public const String CommandDisplayName = "Speed Test";
+        public const String CommandDescription = "Run a speed test";
+
         // Font
         public const String FontFileName = "Inter_18pt-Medium.ttf";
 
