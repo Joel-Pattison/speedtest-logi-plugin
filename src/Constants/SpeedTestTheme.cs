@@ -20,6 +20,9 @@ namespace Loupedeck.SpeedTestPlugin.Constants
 
         public static class Dimensions
         {
+            /// <summary>The reference resolution that all fonts and gaps are designed for (116x116).</summary>
+            public const Int32 ReferenceResolution = 116;
+
             public const Int32 IconPadding = 20;
             public const Int32 ProgressBarHeight = 6;
 

@@ -29,26 +29,29 @@ namespace Loupedeck.SpeedTestPlugin.Rendering
 
         public BitmapImage Render(SpeedTestState state, PluginImageSize imageSize)
         {
-            var width = imageSize.GetButtonWidth();
-            var height = imageSize.GetButtonHeight();
+            var targetWidth = imageSize.GetButtonWidth();
+            var targetHeight = imageSize.GetButtonHeight();
 
             try
             {
-                using (var builder = new ImageBuilder(width, height))
+                using (var builder = new ImageBuilder(targetWidth, targetHeight))
                 {
+                    builder.SetResolutionScale(SpeedTestTheme.Dimensions.ReferenceResolution, SpeedTestTheme.Dimensions.ReferenceResolution);
+
                     builder.Clear(SpeedTestTheme.Colors.Black);
-                    this.RenderState(builder, width, height, state);
+                    this.RenderState(builder, state);
+
                     return builder.ToBitmapImage();
                 }
             }
             catch (Exception ex)
             {
                 PluginLog.Error(ex, "Error in SpeedTestRenderer");
-                return RenderError(width, height, ex.Message);
+                return RenderError(targetWidth, targetHeight, ex.Message);
             }
         }
 
-        private void RenderState(ImageBuilder builder, Int32 width, Int32 height, SpeedTestState state)
+        private void RenderState(ImageBuilder builder, SpeedTestState state)
         {
             var renderer = this._renderers.FirstOrDefault(r => r.CanRender(state));
             if (renderer == null)
@@ -57,7 +60,7 @@ namespace Loupedeck.SpeedTestPlugin.Rendering
                 return;
             }
 
-            renderer.Render(builder, width, height, state);
+            renderer.Render(builder, state);
         }
 
         private static BitmapImage RenderError(Int32 width, Int32 height, String message)

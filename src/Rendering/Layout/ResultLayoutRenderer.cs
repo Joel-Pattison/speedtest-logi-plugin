@@ -10,10 +10,10 @@ namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
     {
         public Boolean CanRender(SpeedTestState state) => state.IsDone;
 
-        public void Render(ImageBuilder builder, Int32 width, Int32 height, SpeedTestState state)
+        public void Render(ImageBuilder builder, SpeedTestState state)
         {
             var parts = state.GetSpeedParts();
-            this.DrawResults(builder, width, height, state.ServerLocation, parts[0], parts[1], parts[2]);
+            this.DrawResults(builder, SpeedTestTheme.Dimensions.ReferenceResolution, SpeedTestTheme.Dimensions.ReferenceResolution, state.ServerLocation, parts[0], parts[1], parts[2]);
         }
 
         private void DrawResults(ImageBuilder builder, Int32 width, Int32 height, String serverLocation, String ping, String download, String upload)

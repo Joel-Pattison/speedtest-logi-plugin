@@ -10,14 +10,14 @@ namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
     {
         public Boolean CanRender(SpeedTestState state) => state.IsReady;
 
-        public void Render(ImageBuilder builder, Int32 width, Int32 height, SpeedTestState state)
+        public void Render(ImageBuilder builder, SpeedTestState state)
         {
             try
             {
                 var iconBytes = EmbeddedResources.ReadBinaryFile(PluginConstants.ImageResourceName);
                 if (iconBytes != null)
                 {
-                    builder.DrawCenteredImage(iconBytes, width, height, SpeedTestTheme.Dimensions.IconPadding);
+                    builder.DrawCenteredImage(iconBytes, SpeedTestTheme.Dimensions.ReferenceResolution, SpeedTestTheme.Dimensions.ReferenceResolution, SpeedTestTheme.Dimensions.IconPadding);
                     return;
                 }
             }

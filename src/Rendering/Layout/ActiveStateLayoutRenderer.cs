@@ -13,11 +13,11 @@ namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
 
         public Boolean CanRender(SpeedTestState state) => state.IsActive;
 
-        public void Render(ImageBuilder builder, Int32 width, Int32 height, SpeedTestState state)
+        public void Render(ImageBuilder builder, SpeedTestState state)
         {
             var phaseStyle = this._phaseStyleProvider.GetPhaseStyle(state);
-            DrawActiveStateWithValue(builder, width, height, state, phaseStyle, state.Speed);
-            DrawProgressBar(builder, width, height, state.Progress, phaseStyle.Color);
+            DrawActiveStateWithValue(builder, SpeedTestTheme.Dimensions.ReferenceResolution, SpeedTestTheme.Dimensions.ReferenceResolution, state, phaseStyle, state.Speed);
+            DrawProgressBar(builder, SpeedTestTheme.Dimensions.ReferenceResolution, SpeedTestTheme.Dimensions.ReferenceResolution, state.Progress, phaseStyle.Color);
         }
 
         private static void DrawActiveStateWithValue(ImageBuilder builder, Int32 width, Int32 height,
