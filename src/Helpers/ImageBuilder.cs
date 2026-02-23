@@ -27,6 +27,17 @@ namespace Loupedeck.SpeedTestPlugin.Helpers
             InitializeFont();
         }
 
+        /// <summary>
+        /// Scales the canvas coordinate system so that all subsequent drawing operations
+        /// are mapped from the specified virtual base resolution to the actual physical resolution.
+        /// </summary>
+        public void SetResolutionScale(Int32 virtualWidth, Int32 virtualHeight)
+        {
+            var scaleX = (Single)this.Width / virtualWidth;
+            var scaleY = (Single)this.Height / virtualHeight;
+            this._canvas.Scale(scaleX, scaleY);
+        }
+
         private static void InitializeFont()
         {
             if (_defaultTypeface != null)
