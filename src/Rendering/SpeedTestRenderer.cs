@@ -33,7 +33,11 @@ namespace Loupedeck.SpeedTestPlugin.Rendering
         {
             var targetWidth = imageSize.GetButtonWidth();
             var targetHeight = imageSize.GetButtonHeight();
-            var format = targetWidth <= 48 && targetHeight <= 48 ? DisplayFormat.Small : DisplayFormat.Normal;
+            PluginLog.Info($"Rendering button with width: {targetWidth}, height: {targetHeight}");
+
+            // Only actions ring should display the small format. We can identify it because actions ring is variable and will not map to
+            // the standard enum values.
+            var format = Enum.IsDefined(typeof(PluginImageSize), imageSize) ? DisplayFormat.Normal : DisplayFormat.Small;
 
             try
             {
