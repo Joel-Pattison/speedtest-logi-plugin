@@ -26,6 +26,7 @@ namespace Loupedeck.SpeedTestPlugin.Constants
             public const Int32 IconPadding = 20;
             public const Int32 ProgressBarHeight = 6;
 
+            public const Int32 GapMicro = 2;
             public const Int32 GapTiny = 4;
             public const Int32 GapSmall = 8;
             public const Int32 GapMedium = 14;
@@ -56,4 +57,3 @@ namespace Loupedeck.SpeedTestPlugin.Constants
         }
     }
 }
-

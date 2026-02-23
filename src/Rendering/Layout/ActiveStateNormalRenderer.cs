@@ -1,5 +1,7 @@
 namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
 {
+    using System;
+
     using Loupedeck.SpeedTestPlugin.Constants;
     using Loupedeck.SpeedTestPlugin.Helpers;
     using Loupedeck.SpeedTestPlugin.Models;
@@ -7,11 +9,11 @@ namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
 
     using SkiaSharp;
 
-    public class ActiveStateRenderer(IPhaseStyleProvider phaseStyleProvider) : IStateRenderer
+    public class ActiveStateNormalRenderer(IPhaseStyleProvider phaseStyleProvider) : IStateRenderer
     {
         private readonly IPhaseStyleProvider _phaseStyleProvider = phaseStyleProvider;
 
-        public Boolean CanRender(SpeedTestState state) => state.IsActive;
+        public Boolean CanRender(SpeedTestState state, DisplayFormat format) => state.IsActive && format == DisplayFormat.Normal;
 
         public void Render(ImageBuilder builder, SpeedTestState state)
         {
@@ -24,7 +26,7 @@ namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
             SpeedTestState state, PhaseStyle style, String valueStr)
         {
             var headerText = state.Phase.ToString().ToUpper();
-            var unitText = $"{style.Icon} {style.Unit}";
+            var unitText = $"{style.Icon}{style.Unit}";
 
             var headerY = (Int32)(height * 0.17);
             var valueY = (Int32)(height * 0.34);

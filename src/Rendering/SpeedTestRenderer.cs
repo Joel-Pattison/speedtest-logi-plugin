@@ -21,9 +21,11 @@ namespace Loupedeck.SpeedTestPlugin.Rendering
             var phaseStyleProvider = new PhaseStyleProvider();
             this._renderers = new IStateRenderer[]
             {
-                new ResultStateRenderer(),
+                new ResultNormalRenderer(),
+                new ResultSmallRenderer(),
                 new ReadyStateRenderer(),
-                new ActiveStateRenderer(phaseStyleProvider)
+                new ActiveStateNormalRenderer(phaseStyleProvider),
+                new ActiveStateSmallRenderer(phaseStyleProvider)
             };
         }
 
@@ -31,6 +33,7 @@ namespace Loupedeck.SpeedTestPlugin.Rendering
         {
             var targetWidth = imageSize.GetButtonWidth();
             var targetHeight = imageSize.GetButtonHeight();
+            var format = targetWidth <= 48 && targetHeight <= 48 ? DisplayFormat.Small : DisplayFormat.Normal;
 
             try
             {
@@ -39,7 +42,7 @@ namespace Loupedeck.SpeedTestPlugin.Rendering
                     builder.SetResolutionScale(SpeedTestTheme.Dimensions.ReferenceResolution, SpeedTestTheme.Dimensions.ReferenceResolution);
 
                     builder.Clear(SpeedTestTheme.Colors.Black);
-                    this.RenderState(builder, state);
+                    this.RenderState(builder, state, format);
 
                     return builder.ToBitmapImage();
                 }
@@ -51,9 +54,9 @@ namespace Loupedeck.SpeedTestPlugin.Rendering
             }
         }
 
-        private void RenderState(ImageBuilder builder, SpeedTestState state)
+        private void RenderState(ImageBuilder builder, SpeedTestState state, DisplayFormat format)
         {
-            var renderer = this._renderers.FirstOrDefault(r => r.CanRender(state));
+            var renderer = this._renderers.FirstOrDefault(r => r.CanRender(state, format));
             if (renderer == null)
             {
                 PluginLog.Warning($"No renderer found for state: {state.Phase}");

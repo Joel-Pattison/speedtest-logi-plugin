@@ -5,7 +5,7 @@ namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
 
     public interface IStateRenderer
     {
-        Boolean CanRender(SpeedTestState state);
+        Boolean CanRender(SpeedTestState state, DisplayFormat format);
         void Render(ImageBuilder builder, SpeedTestState state);
     }
 }

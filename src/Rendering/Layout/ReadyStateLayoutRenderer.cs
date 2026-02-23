@@ -8,7 +8,7 @@ namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
 
     public class ReadyStateRenderer : IStateRenderer
     {
-        public Boolean CanRender(SpeedTestState state) => state.IsReady;
+        public Boolean CanRender(SpeedTestState state, DisplayFormat format) => state.IsReady;
 
         public void Render(ImageBuilder builder, SpeedTestState state)
         {
