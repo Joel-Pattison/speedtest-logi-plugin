@@ -1,6 +1,6 @@
-namespace Loupedeck.SpeedTestPlugin.Rendering.Providers
+namespace Loupedeck.SpeedTestPlusPlugin.Rendering.Providers
 {
-    using Loupedeck.SpeedTestPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
 
     public interface IPhaseStyleProvider
     {

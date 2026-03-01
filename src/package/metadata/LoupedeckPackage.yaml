@@ -2,10 +2,10 @@
 # GENERAL SETTINGS
 # ==================================================================================================
 type: plugin4
-name: SpeedTest
-displayName: SpeedTest
+name: SpeedTestPlus
+displayName: Speed Test
 description: Instantly test your internet connection speed directly from your Logi device.
-pluginFileName: SpeedTestPlugin.dll
+pluginFileName: SpeedTestPlusPlugin.dll
 version: 1.0
 author: Koreve
 copyright: Copyright © 2026 Koreve. All rights reserved.

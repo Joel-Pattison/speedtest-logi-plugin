@@ -1,4 +1,4 @@
-namespace Loupedeck.SpeedTestPlugin.Helpers
+namespace Loupedeck.SpeedTestPlusPlugin.Helpers
 {
     using System;
 

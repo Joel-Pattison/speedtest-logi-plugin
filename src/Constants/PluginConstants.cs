@@ -1,4 +1,4 @@
-namespace Loupedeck.SpeedTestPlugin.Constants
+namespace Loupedeck.SpeedTestPlusPlugin.Constants
 {
     using System;
 
@@ -6,7 +6,7 @@ namespace Loupedeck.SpeedTestPlugin.Constants
     public static class PluginConstants
     {
         // Command metadata
-        public const String CommandDisplayName = "Speed Test";
+        public const String CommandDisplayName = "Run Speed Test";
         public const String CommandDescription = "Run a speed test";
 
         // Font
@@ -16,10 +16,10 @@ namespace Loupedeck.SpeedTestPlugin.Constants
         public static readonly String ExeName = Loupedeck.Helpers.IsWindows() ? "api.exe" : "api";
 
         public static readonly String ExeResourceName = Loupedeck.Helpers.IsWindows()
-            ? "Loupedeck.SpeedTestPlugin.External.api.exe"
-            : "Loupedeck.SpeedTestPlugin.External.api";
+            ? "Loupedeck.SpeedTestPlusPlugin.External.api.exe"
+            : "Loupedeck.SpeedTestPlusPlugin.External.api";
 
-        public const String ImageResourceName = "Loupedeck.SpeedTestPlugin.package.metadata.Icon256x256.png";
+        public const String ImageResourceName = "Loupedeck.SpeedTestPlusPlugin.package.metadata.Icon256x256.png";
 
         public const String ExeArguments = "--accept-license --accept-gdpr --progress=yes -f jsonl";
     }

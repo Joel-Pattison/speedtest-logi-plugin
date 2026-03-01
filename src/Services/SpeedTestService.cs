@@ -1,4 +1,4 @@
-namespace Loupedeck.SpeedTestPlugin.Services
+namespace Loupedeck.SpeedTestPlusPlugin.Services
 {
     using System;
     using System.Collections.Generic;
@@ -8,9 +8,9 @@ namespace Loupedeck.SpeedTestPlugin.Services
     using System.Threading;
     using System.Threading.Tasks;
 
-    using Loupedeck.SpeedTestPlugin.Constants;
-    using Loupedeck.SpeedTestPlugin.Helpers;
-    using Loupedeck.SpeedTestPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Constants;
+    using Loupedeck.SpeedTestPlusPlugin.Helpers;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
 
     public class SpeedTestService : ISpeedTestService
     {

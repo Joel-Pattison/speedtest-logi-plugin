@@ -1,10 +1,10 @@
-namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
+namespace Loupedeck.SpeedTestPlusPlugin.Rendering.Layout
 {
     using System;
 
-    using Loupedeck.SpeedTestPlugin.Constants;
-    using Loupedeck.SpeedTestPlugin.Helpers;
-    using Loupedeck.SpeedTestPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Constants;
+    using Loupedeck.SpeedTestPlusPlugin.Helpers;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
 
     using SkiaSharp;
 

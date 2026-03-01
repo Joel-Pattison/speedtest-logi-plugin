@@ -1,9 +1,9 @@
-namespace Loupedeck.SpeedTestPlugin.Services
+namespace Loupedeck.SpeedTestPlusPlugin.Services
 {
     using System;
     using System.Threading.Tasks;
 
-    using Loupedeck.SpeedTestPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
 
     public interface ISpeedTestService
     {

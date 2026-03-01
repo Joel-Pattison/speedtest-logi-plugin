@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <RootNamespace>Loupedeck.SpeedTestPlugin</RootNamespace>
+    <RootNamespace>Loupedeck.SpeedTestPlusPlugin</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 
@@ -23,7 +23,7 @@
     <BaseOutputPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\bin\'))</BaseOutputPath>
     <OutputPath>$(BaseOutputPath)$(Configuration)\bin\</OutputPath>
 
-    <PluginShortName>SpeedTest</PluginShortName>
+    <PluginShortName>SpeedTestPlus</PluginShortName>
   </PropertyGroup>
 
   <ItemGroup>

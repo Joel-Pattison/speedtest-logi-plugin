@@ -1,4 +1,4 @@
-namespace Loupedeck.SpeedTestPlugin.Models
+namespace Loupedeck.SpeedTestPlusPlugin.Models
 {
     using System;
 

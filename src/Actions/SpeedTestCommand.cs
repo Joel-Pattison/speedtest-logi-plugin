@@ -1,13 +1,13 @@
-namespace Loupedeck.SpeedTestPlugin.Actions
+namespace Loupedeck.SpeedTestPlusPlugin.Actions
 {
     using System;
     using System.Threading.Tasks;
 
-    using Loupedeck.SpeedTestPlugin.Constants;
-    using Loupedeck.SpeedTestPlugin.Helpers;
-    using Loupedeck.SpeedTestPlugin.Models;
-    using Loupedeck.SpeedTestPlugin.Rendering;
-    using Loupedeck.SpeedTestPlugin.Services;
+    using Loupedeck.SpeedTestPlusPlugin.Constants;
+    using Loupedeck.SpeedTestPlusPlugin.Helpers;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Rendering;
+    using Loupedeck.SpeedTestPlusPlugin.Services;
 
     public class SpeedTestCommand : PluginDynamicCommand
     {

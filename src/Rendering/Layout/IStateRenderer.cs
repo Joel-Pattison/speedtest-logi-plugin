@@ -1,7 +1,7 @@
-namespace Loupedeck.SpeedTestPlugin.Rendering.Layout
+namespace Loupedeck.SpeedTestPlusPlugin.Rendering.Layout
 {
-    using Loupedeck.SpeedTestPlugin.Helpers;
-    using Loupedeck.SpeedTestPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Helpers;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
 
     public interface IStateRenderer
     {

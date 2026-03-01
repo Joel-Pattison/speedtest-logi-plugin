@@ -1,9 +1,9 @@
-namespace Loupedeck.SpeedTestPlugin.Helpers
+namespace Loupedeck.SpeedTestPlusPlugin.Helpers
 {
     using System;
     using System.IO;
 
-    using Loupedeck.SpeedTestPlugin.Constants;
+    using Loupedeck.SpeedTestPlusPlugin.Constants;
 
     using SkiaSharp;
 

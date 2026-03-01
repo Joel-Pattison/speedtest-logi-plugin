@@ -18,21 +18,21 @@
     {
       "label": "Package Plugin",
       "type": "shell",
-      "command": "logiplugintool pack ./bin/Release ./SpeedTest.lplug4",
+      "command": "logiplugintool pack ./bin/Release ./SpeedTestPlus.lplug4",
       "group": "none",
       "problemMatcher": []
     },
     {
       "label": "Install Plugin",
       "type": "shell",
-      "command": "logiplugintool install ./SpeedTest.lplug4",
+      "command": "logiplugintool install ./SpeedTestPlus.lplug4",
       "group": "none",
       "problemMatcher": []
     },
     {
       "label": "Uninstall Plugin",
       "type": "shell",
-      "command": "logiplugintool uninstall SpeedTest",
+      "command": "logiplugintool uninstall SpeedTestPlus",
       "group": "none",
       "problemMatcher": []
     }

@@ -1,6 +1,6 @@
-namespace Loupedeck.SpeedTestPlugin.Rendering
+namespace Loupedeck.SpeedTestPlusPlugin.Rendering
 {
-    using Loupedeck.SpeedTestPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
 
     public interface ISpeedTestRenderer
     {

@@ -1,16 +1,16 @@
-namespace Loupedeck.SpeedTestPlugin
+namespace Loupedeck.SpeedTestPlusPlugin
 {
     using System;
 
-    using Loupedeck.SpeedTestPlugin.Helpers;
+    using Loupedeck.SpeedTestPlusPlugin.Helpers;
 
-    public class SpeedTestPlugin : Plugin
+    public class SpeedTestPlusPlugin : Plugin
     {
         public override Boolean UsesApplicationApiOnly => true;
 
         public override Boolean HasNoApplication => true;
 
-        public SpeedTestPlugin()
+        public SpeedTestPlusPlugin()
         {
             PluginLog.Init(this.Log);
             PluginResources.Init(this.Assembly);

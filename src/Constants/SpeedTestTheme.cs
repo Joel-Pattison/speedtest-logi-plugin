@@ -1,4 +1,4 @@
-namespace Loupedeck.SpeedTestPlugin.Constants
+namespace Loupedeck.SpeedTestPlusPlugin.Constants
 {
     using System;
 

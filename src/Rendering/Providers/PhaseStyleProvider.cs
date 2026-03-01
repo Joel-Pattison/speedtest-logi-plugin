@@ -1,7 +1,7 @@
-namespace Loupedeck.SpeedTestPlugin.Rendering.Providers
+namespace Loupedeck.SpeedTestPlusPlugin.Rendering.Providers
 {
-    using Loupedeck.SpeedTestPlugin.Constants;
-    using Loupedeck.SpeedTestPlugin.Models;
+    using Loupedeck.SpeedTestPlusPlugin.Constants;
+    using Loupedeck.SpeedTestPlusPlugin.Models;
 
     public class PhaseStyleProvider : IPhaseStyleProvider
     {
